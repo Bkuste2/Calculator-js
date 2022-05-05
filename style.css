@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
 }
 
 body{
@@ -45,6 +49,8 @@ body{
     background-color: #000;
     outline: none;
     color: #fff;
+    overflow-x: scroll;
+    width: 99%;
 }
 
 .df{
@@ -85,4 +91,66 @@ body{
 
 .divButton:hover{
     cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 820px){
+
+    body{
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+    }
+    .formato{
+        width: 100%;
+        min-width: 0;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        height: auto;
+    }
+
+    .visor{
+        width: 90.5%;
+        position: relative;
+        left: .3%;
+    }
+
+    #conta{
+        margin-left: 1%;
+        width: 98%;
+    }
+}
+
+@media (max-width: 600px){
+    .divButton{
+        font-size: 20px;
+    }
+    .visor{
+        width: 91%;
+        position: relative;
+        left: 1.2%;
+    }
+}
+@media screen and (max-width: 480px){
+    .divButton{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .visor{
+        width: 91%;
+        left: 4%;
+    }
+    .formato{
+        left:46%;
+        top: 48%;
+    }
+    .divButton{
+        font-size: 13px;
+    }
 }

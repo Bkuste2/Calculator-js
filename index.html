@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+
+    <!-- ESTILOS -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/02341f1be8.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onkeyup="keyPressed(event)">
     <div class="alinhar">
         <div class="formato">
             <div class="visor">
@@ -16,31 +19,31 @@
 
             <div class="botoes df">
                 <div class="coluna">
-                    <div class="divButton" onclick="calculadora('backspace')"> <= </div>
-                    <div class="divButton" onclick="calculadora(7)">7</div>
-                    <div class="divButton" onclick="calculadora(4)">4</div>
-                    <div class="divButton" onclick="calculadora(1)">1</div>
-                    <div class="divButton" onclick="calculadora(0)">0</div>
+                    <div class="divButton" onclick="calculadora('C')" id="C">C</div>
+                    <div class="divButton" onclick="calculadora(7)" id="num7">7</div>
+                    <div class="divButton" onclick="calculadora(4)" id="num4">4</div>
+                    <div class="divButton" onclick="calculadora(1)" id="num1">1</div>
+                    <div class="divButton" onclick="calculadora(0)" id="num0">0</div>
                 </div>
                 <div class="coluna">
-                    <div class="divButton" onclick="calculadora('C')">C</div>
-                    <div class="divButton" onclick="calculadora(8)">8</div>
-                    <div class="divButton" onclick="calculadora(5)">5</div>
-                    <div class="divButton" onclick="calculadora(2)">2</div>
-                    <div class="divButton" onclick="calculadora('.')">.</div>
+                    <div class="divButton" onclick="calculadora('CE')" id="CE">CE</div>
+                    <div class="divButton" onclick="calculadora(8)" id="num8">8</div>
+                    <div class="divButton" onclick="calculadora(5)" id="num5">5</div>
+                    <div class="divButton" onclick="calculadora(2)" id="num2">2</div>
+                    <div class="divButton" onclick="calculadora('.' )" id="ponto">.</div>
                 </div>
                 <div class="coluna">
-                    <div class="divButton" onclick="calculadora('CE')">CE</div>
-                    <div class="divButton" onclick="calculadora(9)">9</div>
-                    <div class="divButton" onclick="calculadora(6)">6</div>
-                    <div class="divButton" onclick="calculadora(3)">3</div>
-                    <div class="divButton" onclick="calculadora('=')">=</div>
+                    <div class="divButton" onclick="calculadora('backspace')" id="backspace"> <i class="fa-solid fa-delete-left"></i></div>
+                    <div class="divButton" onclick="calculadora(9)" id="num9">9</div>
+                    <div class="divButton" onclick="calculadora(6)" id="num6">6</div>
+                    <div class="divButton" onclick="calculadora(3)" id="num3">3</div>
+                    <div class="divButton" onclick="calculadora('=')" id="igual">=</div>
                 </div>
                 <div class="coluna">
-                    <div class="divButton" onclick="calculadora('/')">÷</div>
-                    <div class="divButton" onclick="calculadora('*')">x</div>
-                    <div class="divButton" onclick="calculadora('-')">-</div>
-                    <div class="divButton divButtonMais" onclick="calculadora('+')">+</div>
+                    <div class="divButton" onclick="calculadora('/' )" id="divisao">÷</div>
+                    <div class="divButton" onclick="calculadora('*' )" id="multiplicacao">x</div>
+                    <div class="divButton" onclick="calculadora('-' )" id="subtracao">-</div>
+                    <div class="divButton divButtonMais" onclick="calculadora('+')" id="adicao">+</div>
                 </div>
             </div>
 

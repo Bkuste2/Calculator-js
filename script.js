@@ -98,4 +98,60 @@ function calculadora(e) {
     }
 }
 
-
+const keyPressed = (e) => {
+    if(e.code === "Digit1" || e.code === "Numpad1"){
+        document.getElementById('num1').click();
+    }
+    else if(e.code === "Digit2" || e.code === "Numpad2"){
+        document.getElementById('num2').click();
+    }
+    else if(e.code === "Digit3" || e.code === "Numpad3"){
+        document.getElementById('num3').click();
+    }
+    else if(e.code === "Digit4" || e.code === "Numpad4"){
+        document.getElementById('num4').click();
+    }
+    else if(e.code === "Digit5" || e.code === "Numpad5"){
+        document.getElementById('num5').click();
+    }
+    else if(e.code === "Digit6" || e.code === "Numpad6"){
+        document.getElementById('num6').click();
+    }
+    else if(e.code === "Digit7" || e.code === "Numpad7"){
+        document.getElementById('num7').click();
+    }
+    else if(e.code === "Digit8" || e.code === "Numpad8"){
+        document.getElementById('num8').click();
+    }
+    else if(e.code === "Digit9" || e.code === "Numpad9"){
+        document.getElementById('num9').click();
+    }
+    else if(e.code === "Digit0" || e.code === "Numpad0"){
+        document.getElementById('num0').click();
+    }
+    else if(e.code === "NumpadDivide"){
+        document.getElementById('divisao').click();
+    }
+    else if(e.code === "NumpadMultiply"){
+        document.getElementById('multiplicacao').click();
+    }
+    else if(e.code === "Minus" || e.code === "NumpadSubtract"){
+        document.getElementById('subtracao').click();
+    }
+    else if(e.code === "NumpadAdd" || e.code === "Equal"){
+        document.getElementById('adicao').click();
+    }
+    else if(e.code === "NumpadEnter" || e.code === "Enter"){
+        document.getElementById('igual').click();
+    }
+    else if(e.code === "Backspace"){
+        document.getElementById('backspace').click();
+    }
+    else if(e.code === "F2"){
+        document.getElementById('CE').click();
+    }
+    else if(e.code === "Delete"){
+        document.getElementById('C').click();
+    }
+    console.log(e);
+}
